@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inconsolata:wght@500&family=Poppins:wght@200&display=swap");
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+}
+
+.wrapper {
+  position: relative;
+  max-width: 28rem;
+  min-height: 18rem;
+  margin: 0 auto;
+  border-radius: 7%;
+  background-color: hsl(217, 19%, 24%);
+}
+
+.advicenumero {
+  margin: 0 auto;
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+  font-size: 1rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.advicecontent {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 5rem 0.3rem;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+}
+
+#advicegenerator {
+  position: absolute;
+  max-width: 5rem;
+  min-height: 2rem;
+  border-radius: 50%;
+  top: 90%;
+  left: 45%;
+}
+
+.dice-icon {
+  position: relative;
+  max-width: 4rem;
+  min-height: 2rem;
+  padding: 2px;
+}
+#advicegenerator:hover {
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 1.5rem hsl(150, 100%, 66%);
+}
+
+.divider {
+  position: absolute;
+  width: 25em;
+  left: 5%;
+  bottom: 15%;
+  margin: 0 auto;
+  z-index: 10;
+  overflow: hidden;
+}
+.attribution {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #bae8e8;
+  margin-top: 5rem;
+}
+
+a:link {
+  color: hsl(150, 100%, 66%);
+  text-decoration: none;
+}
+a:visited {
+  color: hsl(150, 60%, 92%);
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(150, 100%, 66%);
+  text-decoration: none;
+}
+
+@media (max-width: 50em) {
+  .wrapper {
+    position: relative;
+    max-width: 90%;
+    min-height: 70%;
+    margin: 0 auto;
+    border-radius: 7%;
+    background-color: hsl(217, 19%, 24%);
+  }
+  .divider {
+    display: none;
+  }
+  .advicecontent {
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;
+    font-weight: bold;
+
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-device-width: 50em) and (max-device-width: 64em) {
+  .wrapper {
+    position: relative;
+    max-width: 74%;
+    min-height: 70%;
+    margin: 0 auto;
+    border-radius: 7%;
+    background-color: hsl(217, 19%, 24%);
+  }
+  .divider {
+    position: absolute;
+    width: 25em;
+    left: 17%;
+    bottom: 18%;
+    margin: 0 auto;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .advicecontent {
+    font-family: "Comfortaa", cursive;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 1.5rem 0.3rem;
+
+    width: 200px;
+    height: 200px;
+  }
+}
